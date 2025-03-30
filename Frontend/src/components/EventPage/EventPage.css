@@ -1,0 +1,186 @@
+.event-page-container {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #e7ebee;
+  border-radius: 12px;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Back Button Container */
+.back-button-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+/* Back Button */
+.back-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  background: #1e3a8a;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(30, 58, 138, 0.3);
+}
+
+.back-btn:hover {
+  background: #1a2f6d;
+  box-shadow: 0px 6px 12px rgba(30, 58, 138, 0.4);
+  transform: translateY(-3px);
+}
+
+.back-icon {
+  font-size: 18px;
+}
+
+/* Main Event Image */
+.event-main-image {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.event-details {
+  padding: 20px;
+}
+
+.event-description {
+  font-size: 1.1rem;
+  color: #444;
+  margin: 10px 0;
+}
+
+/* Volunteer Button */
+.volunteer-btn {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  background: #28a745;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(40, 167, 69, 0.3);
+}
+
+.volunteer-btn:hover {
+  background: #218838;
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(40, 167, 69, 0.4);
+}
+
+/* Register Form Button */
+.form-btn {
+  background: #1e3a8a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(30, 58, 138, 0.3);
+}
+
+.form-btn:hover {
+  background: #1a2f6d;
+  transform: translateY(-3px);
+  box-shadow: 0px 6px 12px rgba(30, 58, 138, 0.4);
+}
+
+.qr-section {
+  margin: 20px 0;
+}
+
+.qr-image {
+  width: 150px;
+  height: auto;
+  margin-top: 10px;
+}
+
+input[type="file"] {
+  margin-top: 10px;
+}
+
+.google-form {
+  margin-top: 20px;
+}
+
+/* Image Gallery */
+.image-gallery {
+  position: relative;
+  margin-top: 30px;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+/* Carousel Wrapper */
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease;
+  will-change: transform;
+}
+
+/* Image Slides */
+.slider-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 12px;
+  flex-shrink: 0;
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation Buttons */
+.slider-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  font-size: 1.8rem;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease-in-out;
+}
+
+.slider-btn:hover {
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.slider-btn.left {
+  left: 10px;
+}
+
+.slider-btn.right {
+  right: 10px;
+}
+
+/* Mobile Friendly */
+@media (max-width: 768px) {
+  .slider-btn {
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+  }
+}

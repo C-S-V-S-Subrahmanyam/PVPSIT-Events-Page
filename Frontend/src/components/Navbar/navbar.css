@@ -1,0 +1,190 @@
+/* Remove underline from all links in Navbar */
+.navbar-links a, .dropdown-content a {
+  text-decoration: none !important; /* Ensures no underlines */
+}
+
+/* Navbar General Styling */
+.navbar {
+  width: 100%;
+  background-color: #d3d3d3; /* Light Gray */
+  padding: 0 10px; /* Reduced padding to avoid overflow */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  position: relative;
+  z-index: 1000;
+  height: 45px; /* Adjusted height */
+  display: flex;
+  font-family: 'Roboto', sans-serif; /* Modern font */
+  box-sizing: border-box; /* Ensures padding doesn't affect width */
+}
+
+/* Adjusted Navbar Container */
+.navbar-container {
+  width: 100%; /* Full width of the screen */
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px; /* Make sure padding fits within the container */
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+}
+
+/* Logo */
+.navbar-logo {
+  font-size: 24px;
+  font-weight: 600;
+  color: black;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.navbar-logo:hover {
+  color: #f39c12; /* Hover effect for logo */
+}
+
+/* Navbar Links */
+.navbar-links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping to prevent overflow */
+}
+
+/* Left and Right aligned sections */
+.navbar-left, .navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+/* Dropdown Styling */
+.dropdown {
+  position: relative;
+}
+
+.dropbtn {
+  background: none;
+  border: none;
+  font-size: 18px;
+  color: black;
+  cursor: pointer;
+  padding: 12px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.dropbtn:hover {
+  color: white;
+  background-color: #1e3a8a; /* Dark Blue background */
+  border-radius: 5px;
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #1e3a8a; /* Dark Blue */
+  min-width: 220px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+}
+
+.dropdown-content a {
+  display: block;
+  color: white;
+  padding: 12px 15px;
+  text-decoration: none !important; /* Removes underline */
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
+}
+
+.dropdown-content a:hover {
+  background-color: #34495e; /* Darker gray on hover */
+  padding-left: 25px;
+}
+
+/* Show dropdown on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Button Styling */
+.auth-btn {
+  padding: 5px 15px; /* Larger size */
+  font-size: 15px; /* Adjust font size */
+  background-color: #1e3a8a; /* Dark Blue from image */
+  color: white;
+  border: none;
+  border-radius: 5px; /* Rounded corners */
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+/* Button Hover Effect */
+.auth-btn:hover {
+  background-color: #34495e; /* Slightly lighter blue on hover */
+}
+
+/* Mobile Button Adjustments */
+@media screen and (max-width: 768px) {
+  .auth-btn {
+    padding: 12px 25px; /* Adjusted padding for smaller screens */
+    font-size: 16px; /* Smaller font for mobile */
+  }
+}
+
+/* Mobile Menu Button */
+.mobile-menu-btn {
+  display: none;
+  font-size: 26px;
+  color: black;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu-btn:hover {
+  color: #f39c12;
+}
+
+/* Mobile Navigation */
+@media screen and (max-width: 768px) {
+  .navbar-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: #d3d3d3; /* Light Gray for mobile */
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 20px 0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    animation: slideIn 0.3s ease-out;
+    box-sizing: border-box; /* Prevent overflow */
+  }
+
+  .navbar-links.active {
+    display: flex;
+    text-decoration: none;
+  }
+
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  /* Mobile Menu Animation */
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      top: 60px;
+    }
+    100% {
+      opacity: 1;
+      top: 80px;
+    }
+  }
+}

@@ -1,0 +1,149 @@
+/* Team Page Container */
+.team-container {
+    text-align: center;
+    padding: 50px;
+    background: #f8f5e1;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  /* Back Button */
+  .back-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(30, 58, 138, 0.3);
+    margin-bottom: 20px;
+  }
+  
+  .back-btn:hover {
+    background: #162d64;
+    transform: scale(1.05);
+  }
+  
+  .back-icon {
+    font-size: 18px;
+  }
+  
+  /* Title */
+  .team-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #e74c3c;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+  }
+  
+  /* Team Grid Layout */
+  .team-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  /* Individual Team Card */
+  .team-card {
+    background: #fff;
+    width: 250px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    overflow: hidden;
+  }
+  
+  /* Hover Effect */
+  .team-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Image Styling */
+  .team-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-bottom: 3px solid #e74c3c;
+  }
+  
+  /* Card Body */
+  .card-body {
+    padding: 15px;
+  }
+  
+  /* Name */
+  .team-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 5px 0;
+  }
+  
+  /* Student ID */
+  .team-id {
+    font-size: 1rem;
+    color: #555;
+  }
+  
+  /* Icon Section */
+  .team-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+  }
+  
+  /* Icons */
+  .icon {
+    font-size: 1.5rem;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  /* Email Icon */
+  .icon.email {
+    color: #e74c3c;
+  }
+  
+  .icon.email:hover {
+    color: #c0392b;
+    transform: scale(1.2);
+  }
+  
+  /* LinkedIn Icon */
+  .icon.linkedin {
+    color: #0077b5;
+  }
+  
+  .icon.linkedin:hover {
+    color: #005582;
+    transform: scale(1.2);
+  }
+  
+  /* GitHub Icon */
+  .icon.github {
+    color: #333;
+  }
+  
+  .icon.github:hover {
+    color: #000;
+    transform: scale(1.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .team-grid {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .team-title {
+      font-size: 2.5rem;
+    }
+  }  

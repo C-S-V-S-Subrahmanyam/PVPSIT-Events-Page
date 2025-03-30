@@ -1,0 +1,94 @@
+/* Container for buttons (aligned properly) */
+.button-container {
+  display: flex;
+  justify-content: space-between; /* Left & right alignment */
+  align-items: center;
+  margin: 10px 20px; /* Adds spacing from FilterBar */
+}
+
+/* Left side buttons (Add Student & Add Event) */
+.left-buttons {
+  display: flex;
+  gap: 10px; /* Space between buttons */
+}
+
+/* Right side button (Designed by) */
+.right-buttons {
+  display: flex;
+}
+
+/* Styling for Add Student & Add Event buttons */
+.action-btn {
+  padding: 12px 18px;
+  background: #16a34a; /* Green color for action buttons */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(22, 163, 74, 0.3);
+  text-transform: uppercase;
+}
+
+/* Hover effect for action buttons */
+.action-btn:hover {
+  background: #127c3f; /* Darker shade */
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(22, 163, 74, 0.5);
+}
+
+/* Active effect for action buttons */
+.action-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0px 2px 5px rgba(22, 163, 74, 0.3);
+}
+
+/* Designed by button styling (Stays at right end) */
+.designed-by-btn {
+  padding: 12px 18px;
+  background: #1e3a8a; /* Primary color */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 8px rgba(30, 58, 138, 0.3);
+  text-transform: uppercase;
+}
+
+/* Hover effect for Designed by button */
+.designed-by-btn:hover {
+  background: #162d64; /* Darker shade */
+  transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(30, 58, 138, 0.5);
+}
+
+/* Active effect for button when clicked */
+.designed-by-btn:active {
+  transform: scale(0.98);
+  box-shadow: 0px 2px 5px rgba(30, 58, 138, 0.3);
+}
+
+/* Responsive Design: Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .button-container {
+      flex-direction: column; /* Stack buttons on smaller screens */
+      align-items: center;
+  }
+
+  .left-buttons {
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+
+  .action-btn, .designed-by-btn {
+      width: 80%;
+      text-align: center;
+  }
+}

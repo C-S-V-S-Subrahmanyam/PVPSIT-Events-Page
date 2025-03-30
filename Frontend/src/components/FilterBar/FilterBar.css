@@ -1,0 +1,43 @@
+.filter-bar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    padding: 15px;
+    background-color: #f0f4f8;
+    border-bottom: 2px solid #ccc;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .filter-bar input,
+  .filter-bar select {
+    padding: 10px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+    background: white;
+    cursor: pointer;
+  }
+  
+  .filter-bar input:focus,
+  .filter-bar select:focus {
+    border-color: #1e3a8a;
+    box-shadow: 0 0 8px rgba(30, 58, 138, 0.3);
+  }
+  
+  @media (max-width: 768px) {
+    .filter-bar {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+    }
+  
+    .filter-bar input,
+    .filter-bar select {
+      width: 90%;
+    }
+  }  

@@ -1,0 +1,7 @@
+/* Ensures full width and proper positioning */
+.headerImage {
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative; /* Ensures it's not in the background */
+}
