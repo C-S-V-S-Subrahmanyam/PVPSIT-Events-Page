@@ -3,10 +3,10 @@
 
 **💻 Built With:**
 
-**React + Vite ⚛️** – Fast, responsive UI
-**Node.js + Express 🚀** – Powerful backend APIs
-**MongoDB Atlas 🗂️**– Secure cloud database
-**JWT Auth 🔐** – Role-based secure access
+**React + Vite ⚛️** – Fast, responsive UI \n
+**Node.js + Express 🚀** – Powerful backend APIs \n
+**MongoDB Atlas 🗂️**– Secure cloud database \n
+**JWT Auth 🔐** – Role-based secure access \n
 **Multer + Nodemailer 📤📧** – Image uploads & email alerts
 
 ✨ Faculty & verified students can post, manage, and track events. View details, QR codes, and forms with ease.
