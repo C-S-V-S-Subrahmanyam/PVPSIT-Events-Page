@@ -26,4 +26,4 @@ Abdul Azeez
 I. Nithyananda Reddy
 
 
-**Start exploring** 👉 pvpsit-events.vercel.app
+**Start exploring** 👉 [pvpsit-events.vercel.app](pvpsit-events.vercel.app)
